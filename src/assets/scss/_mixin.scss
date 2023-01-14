@@ -1,0 +1,77 @@
+@mixin mobile {
+  @media screen and (max-width: 47.9375rem) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 48rem) and (max-width: 61.9375rem) {
+    @content;
+  }
+}
+@mixin xldesktop {
+  @media screen and (min-width: 118.75rem) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 62rem) and (max-width: 118.75rem) {
+    @content;
+  }
+}
+@mixin font_style($font-size, $font-weight, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-family: IRANsans;
+  color: $color;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1800px;
+}
+ol,
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+}
+a:hover {
+  color: pink;
+}
+a:focus {
+  color: orange;
+}
+a:active {
+  color: red;
+}
+a:visited {
+  color: purple;
+}
+#root {
+  background-color: #fcfcfc;
+}
+
+@font-face {
+  font-family: IRANsans;
+  src: url("../fonts/IRANSans\ 400.ttf");
+}
+body,
+p,
+text,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li {
+  font-family: IRANsans;
+}

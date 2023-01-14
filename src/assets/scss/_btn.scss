@@ -1,0 +1,57 @@
+.login-btn {
+  background-color: #9a9a9a;
+  border-radius: 8px;
+  color: white;
+  padding: 7px;
+  border: none;
+  width: 200px;
+  @include font_style(20px, 500, white);
+  &:hover {
+    background-color: #585858;
+  }
+}
+.cart-continue-btn {
+  background: linear-gradient(82.13deg, #fc183a 31.34%, #e88a98 106.31%);
+  border: none;
+  border-radius: 20px;
+  padding: 20px;
+  @include font_style(20px, 800, #fff);
+  width: 90%;
+  &:hover {
+    background: linear-gradient(82.13deg, #ce0422 31.34%, #e0a6ae 106.31%);
+  }
+  @include tablet {
+    width: 30%;
+  }
+  @include mobile {
+    width: 70%;
+  }
+}
+.add-to-cart-btn {
+  background-color: #ffcc08;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  @include font_style(14px, 700, #221e1f);
+  width: 100%;
+  svg {
+    @include font_style(20px, 600, #221e1f);
+  }
+  &:hover {
+    background-color: #ecbe06;
+  }
+}
+.delete-cart-item {
+  background: linear-gradient(82.13deg, #fc183a 31.34%, #e88a98 106.31%);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 50px;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    background: linear-gradient(82.13deg, #ce0422 31.34%, #e0a6ae 106.31%);
+  }
+}
